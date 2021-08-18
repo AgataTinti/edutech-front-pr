@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+var idade = parseInt(prompt("Qual é sua idade?"));
+
+if(idade >= 18) {
+
+	var carteira = (prompt("Você tem carteira de motorista? OBS: responda S ou N."));
+
+		if (carteira == "S"){
+
+			mostra("Então você já pode dirigir!");
+		
+		} else {
+
+			mostra("Você pode tirar a carteira de motorista para poder dirigir, o que acha?");
+
+		}
+
+} else {
+
+	mostra("Você ainda não tem idade para tirar a carteira de motorista, por favor, não dirija.");
+
+}
+
+</script>

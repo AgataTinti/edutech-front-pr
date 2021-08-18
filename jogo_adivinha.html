@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function poulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+function mostra(frase) {
+		document.write(frase);
+		poulaLinha();
+	}
+
+var numeroPensado = Math.round(Math.random () * 100);
+
+var tentativas = 1;
+
+while(tentativas <= 3){
+	
+	var chute = parseInt(prompt("Digite seu chute:"));
+
+	if (chute == numeroPensado) {
+
+		mostra("Você acertou!!");
+		break;
+
+	} else {
+		mostra("Vocé errou... tente novamente");
+		tentativas++;
+	}
+
+}
+
+mostra("FIM!");
+
+</script>

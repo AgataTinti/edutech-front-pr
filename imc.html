@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br><br>")
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var pesoIgor = 89;
+	var alturaIgor = 1.78;
+	var imcIgor = pesoIgor / (alturaIgor * alturaIgor);
+
+	mostra("O IMC de Igor é " + imcIgor);
+</script>

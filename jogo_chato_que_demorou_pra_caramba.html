@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function poulaLinha() {
+
+		document.write("<br><br>");
+	}
+
+function mostra(frase) {
+		document.write(frase);
+		poulaLinha();
+			}
+
+
+var n = parseInt(prompt("Escolha um limite para o jogo (número)"));
+
+function sorteia (sorteado){
+	return = Math.round(Math.random() * n);
+}
+
+var numeroEscolhido = prompt("Agora escolha um número entre 0 e " + n);
+
+if (numeroEscolhido == sorteado){
+	mostra("Meus Parabéns!!!!!");
+} else {
+	mostra("Não foi dessa vez... Eu pendei no número " + sorteado);
+}
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+
+        return Math.round(Math.random() * n);
+    }    
+
+    var numeroPensado = sorteia(10);
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
+        
+        if(chute > numeroPensado){
+        	mostra("Você errou por " + (chute - numeroPensado));
+        } else {
+        	mostra("Você errou por " + (numeroPensado - chute));
+        }
+    }
+
+
+</script>
